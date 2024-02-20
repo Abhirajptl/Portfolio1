@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ff039b7fa4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="nav">
+                <h2 id="img"><span >Abhi</span>raj</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="resumeDownload">Resume</a>
+                    </li>
+                    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hi i'm <span >Abhiraj</span><br>Patel from India</h1>
+            </div>
+        </div>
+    </div>
+     <!-- ---------------about----------------- -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Abhiraj.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm <span>Abhiraj Patel</span>, an aspiring web developer passionate about crafting digital experiences. Proficient in HTML, CSS, and JavaScript, I thrive on transforming ideas into interactive and visually appealing websites. With a keen eye for design and a commitment to user-centric development, I aim to create seamless and engaging online solutions. My journey in web development is driven by a relentless pursuit of knowledge, staying updated with industry trends, and a determination to deliver high-quality results. Eager to contribute my skills to collaborative projects, I am dedicated to honing my abilities and exploring new technologies in the dynamic world of web development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br><br>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>August 2023 - Present</span><br>Career Accelerator Program from  Prefleaf by Masai, Bangalore</li>
+                            <li><span>2020</span><br>BSC CS from IPS Academy College, Indore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+     <!-- ----------------services--------------------  -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Tech Stack</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3"></i>
+                    <h2>CSS</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Tools</h1>
+            <div class="services-list" id="tools">
+                <div>
+                    <img src="images/vscode.png" alt="">
+                </div>
+                <div>
+                    <img src="images/postman.png" alt="">
+                </div>
+                <div>
+                    <img src="images/git.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------portfolio-------------- -->
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div> -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/weather_api.png">
+                    <div class="layer" id="zindex">
+                        <h3>Weather App using API</h3>
+                        <p>
+                            The weather app project aims to develop a user-friendly application providing real-time weather updates. Integrating with reliable APIs, it delivers accurate forecasts. The app's sleek design ensures a seamless user experience, making it an essential tool for staying informed about current and upcoming weather conditions.
+                            </p>
+                        <ul>
+                            <h3>Tech-Stack</h3>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                        <div id="deploy-link" style="display: flex;">
+                            <button class="btn btn2 btn3"><a href="https://github.com/Abhirajptl/Weather-Api-APP"  target="_blank" rel="noopener">Git Repo</a></button>
+                            <button class="btn btn2 btn3"><a href="https://65d2dfdb8f9229b580abbf28--shiny-longma-2a9b91.netlify.app/" target="_blank" rel="noopener">Live Site</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/snakeGame.png">
+                    <div class="layer">
+                        <h3>Learn Digital With Google Site Clone</h3>
+                        <p>Developed an Learn Digital With Google Site clone with personally crafted features, including a user-friendly interface. Implemented CSS enhancements for responsiveness and leveraged local storage for seamless functionality. Demonstrated proficiency in front-end development, creating an intuitive and polished user experience.</p>
+                        <ul>
+                            <h3>Tech-Stack</h3>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                        <div id="deploy-link" style="display: flex;">
+                            <button class="btn btn2 btn3"><a href="https://github.com/Abhirajptl/Snake-Game" target="_blank" rel="noopener">Git Repo</a></button>
+                            <button class="btn btn2 btn3"><a href="https://65d2e4b2c1e04cba89662ce2--rococo-bombolone-c70689.netlify.app/" target="_blank" rel="noopener">Live Site</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/spotify.png">
+                    <div class="layer">
+                        <h3>Spotify Clone using HTML, CSS, JAVASCRIPT</h3>
+                        <p>Designed and implemented a responsive Spotify Clone App , showcasing proficiency in HTML, CSS, and asynchronous programming with debounce functionality. Created an efficient and user-friendly website, demonstrating strong front-end development skills and attention to responsive design principles.</p>
+                        <ul>
+                            <h3>Tech-Stack</h3>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                        <div id="deploy-link" style="display: flex;">
+                            <button class="btn btn2 btn3"><a href="https://github.com/Abhirajptl/spotify-clone" target="_blank" rel="noopener">Git Repo</a></button>
+                            <button class="btn btn2 btn3"><a href="https://65d2dddac1e04cb616662eee--curious-wisp-54be89.netlify.app/" target="_blank" rel="noopener">Live Site</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>patelabhiraj222@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8103213160</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/abhiraj-patel-248305288/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="#" id="download" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <h2 id="msg"></h2>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Thank You for visiting my Portfolio <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+            
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxkR3y3zMzAk4jCaaZbyYdHdhdsEecI9E2qNuVEV327B48A92N-ntH-_S0xqhQvJ0ie/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> 
+   <script src="reume.js"></script>
+</body>
+</html>
